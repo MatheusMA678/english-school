@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'SF Pro Text Regular';
+  src: url(../fonts/SFProText-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Text Medium';
+  src: url(../fonts/SFProText-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'SF UI Display Light';
+  src: url(../fonts/SF-UI-Display-Light.ttf);
+}
+
+@font-face {
+  font-family: 'SF UI Display Regular';
+  src: url(../fonts/SF-UI-Display-Regular-1.ttf);
+}
+
+@font-face {
+  font-family: 'SF UI Display Medium';
+  src: url(../fonts/SFProText-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'SF UI Display Semibold';
+  src: url(../fonts/SF-UI-Display-Semibold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font-light: 'SF UI Display Light', sans-serif;
+  --primary-font-regular: 'SF UI Display Regular', sans-serif;
+  --primary-font-medium: 'SF UI Display Medium', sans-serif;
+  --primary-font-semibold: 'SF UI Display Semibold', sans-serif;
+  --secondary-font-regular: 'SF Pro Text Regular', sans-serif;
+  --secondary-font-medium: 'SF Pro Text Medium', sans-serif;
+}
+
+header {
+  padding: 22px 70px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--secondary-font-medium);
+  font-size: 16px;
+  line-height: 18px;
+  transition: text-shadow .2s;
+}
+
+ul li a:hover {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.37);
+}
+
+header button {
+  background: transparent;
+  border: none;
+  font-family: var(--secondary-font-medium);
+  font-size: 18px;
+  line-height: 20px;
+  color: #5B51DE;
+  padding: 15px 20px;
+  cursor: pointer;
+}
