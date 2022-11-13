@@ -1,0 +1,60 @@
+@media screen and (max-width: 870px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .logo {
+    order: 5;
+  }
+
+  header button {
+    display: none;
+  }
+  
+  .nav-list {
+    position: fixed;
+    top: calc(8vh + 44px);
+    left: 0;
+    width: 50vw;
+    height: calc(100vh - 44px);
+    background: #5B51DE;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    z-index: 2;
+    transform: translatex(-101%);
+    transition: transform .3s ease-in;
+  }
+  .nav-list li {
+    background-color: white;
+    margin: 0 30px;
+    border-radius: 5px;
+  }
+  .nav-list li a {
+    padding: 8px;
+  }
+
+
+  section {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .introduction {
+    max-width: 100%;
+  }
+  .introduction .textArea {
+    gap: 20px;
+  }
+  .introduction .textArea h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .introduction .textArea p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  input {
+    width: 100%;
+  }
+}

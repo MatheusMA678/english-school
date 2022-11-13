@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English School</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media.css">
   <link rel="stylesheet" href="./style/fonts/fonts.css">
 </head>
 <body>
   <header>
     <div class="container">
+      <button onclick="" class="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="logo">
         <img src="./images/logo.svg" alt="English School">
       </div>
       <nav>
-        <ul>
-          <li><a href="#">Tutors <img src="images/down-arrow.svg" alt=""></a></li>
+        <ul class="nav-list">
+          <li><a href="#">Tutors</a></li>
           <li><a href="#">Group classes</a></li>
           <li><a href="#">Corporate training</a></li>
           <li><a href="#">Become a tutor</a></li>
@@ -31,12 +34,22 @@
     <section>
       <img src="images/img-1.svg" alt="English School">
       <div class="introduction">
-        <h1>Effective english courses for kids and teenagers</h1>
-        <p>With professional teachers, flexible learning schedules and courses for all levels you will speak confidently in no time.</p>
-        <input type="email" placeholder="Email">
-        <button>Get Started</button>
+        <div class="textArea">
+          <h1>Effective english courses for kids and teenagers</h1>
+          <p>With professional teachers, flexible learning schedules and courses for all levels you will speak confidently in no time.</p>
+        </div>
+        <form action="">
+          <div class="inputWithIcon">
+            <input type="email" placeholder="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <button>Get Started</button>
+        </form>
       </div>
     </section>
   </main>
+
+  <script src="https://kit.fontawesome.com/0352263c0f.js" crossorigin="anonymous"></script>
+  <script src="script/index.js"></script>
 </body>
 </html>

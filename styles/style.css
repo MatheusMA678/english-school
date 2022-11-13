@@ -43,23 +43,40 @@
   --secondary-font-medium: 'SF Pro Text Medium', sans-serif;
 }
 
+body {
+  font-family: var(--primary-font-regular);
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 32px;
+  padding: 10px;
+}
+
 header {
-  padding: 22px 70px;
+  position: fixed;
+  width: 100vw;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 22px 70px;
 }
 
-nav ul {
+.nav-list {
   display: flex;
   gap: 30px;
   list-style: none;
 }
 
-ul li a {
+.nav-list.active {
+  transform: translate(0);
+}
+
+.nav-list li a {
+  display: block;
   text-decoration: none;
   color: #000;
   font-family: var(--secondary-font-medium);
@@ -68,7 +85,7 @@ ul li a {
   transition: text-shadow .2s;
 }
 
-ul li a:hover {
+.nav-list li a:hover {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.37);
 }
 
@@ -81,4 +98,106 @@ header button {
   color: #5B51DE;
   padding: 15px 20px;
   cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 63px 0 50px 0;
+}
+
+section .introduction {
+  max-width: 553px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.introduction .textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.introduction .textArea h1 {
+  font-family: var(--primary-font-semibold);
+  font-size: 70px;
+  line-height: 80px;
+  color: #000;
+}
+
+.introduction .textArea p {
+  font-family: var(--secondary-font-regular);
+  font-size: 24px;
+  line-height: 30px;
+  color: #73737B;
+}
+
+.introduction form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+input{
+  width: 250px;
+  border: 1px solid #a6a6ab;
+  border-radius: 7px;
+  padding: 17px 20px;
+  font-family: var(--secondary-font-regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  transition: .2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5B51DE;
+  box-shadow: 0 0 10px rgba(90, 81, 222, 0.5);
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon input {
+  padding-left: 43px;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: larger;
+  color: #aaa;
+  transition: .2s;
+}
+
+.inputWithIcon input:focus + i {
+  color: #5B51DE;
+}
+
+form button {
+  background: #5B51DE;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 20px;
+  font-family: var(--secondary-font-medium);
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+form button:hover {
+  background: #4a3fc9;
+}
+
+form button:active {
+  background: #3a2fa5;
 }
